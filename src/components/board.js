@@ -1,4 +1,6 @@
-class Board extends BaseComponent {
+import BaseComponent from "./base-component.js";
+
+export default class Board extends BaseComponent {
   constructor(cards) {
     super({ tag: "div", cssClasses: ["board-container"] });
     this.grid = new BaseComponent({ tag: "div", cssClasses: ["board"] });
