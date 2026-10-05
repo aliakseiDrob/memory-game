@@ -96,21 +96,16 @@ body.modal-open {
   transform: translateY(0);
 }
 
-.board-container {
-  perspective: 1000px;
-}
-
 .board {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 16px;
-  margin: 0 auto;
 }
 
 .card {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 300px;
   position: relative;
   cursor: pointer;
   transform-style: preserve-3d;
